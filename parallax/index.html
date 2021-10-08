@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header>
+    <a href="#home"> JUNGLE</a>
+    <ul>
+        <li id="home" active>HOME</li>
+        <li>CONTACT</li>
+        <li>SERVICES</li>
+        <li>  ABOUT</li>
+    </ul>
+</header>
+
+<section>
+    <img src="./img/sky.png" id="sky" alt="img1"/>
+    <img src="./img/moon.png" id="moon" alt="img1"/>
+    <img src="./img/mountain.png" id="mountain" alt="img1"/>
+</section>
+
+<div class="container" id="about">
+    <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, nobis!</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officia, quo reprehenderit ipsum libero qui dolorem necessitatibus repudiandae commodi ea molestias nobis omnis, dolores iusto animi esse fugiat a quos impedit inventore rem dolor! Eum facilis hic vero, rem nisi delectus excepturi, voluptate perferendis id commodi non architecto doloribus ullam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officia, quo reprehenderit ipsum libero qui dolorem necessitatibus repudiandae commodi ea molestias nobis omnis, dolores iusto animi esse fugiat a quos impedit inventore rem dolor! Eum facilis hic vero, rem nisi delectus excepturi, voluptate perferendis id commodi non architecto doloribus ullam?</p>
+    <br>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officia, quo reprehenderit ipsum libero qui dolorem necessitatibus repudiandae commodi ea molestias nobis omnis, dolores iusto animi esse fugiat a quos impedit inventore rem dolor! Eum facilis hic vero, rem nisi delectus excepturi, voluptate perferendis id commodi non architecto doloribus ullam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officia, quo reprehenderit ipsum libero qui dolorem necessitatibus repudiandae commodi ea molestias nobis omnis, dolores iusto animi esse fugiat a quos impedit inventore rem dolor! Eum facilis hic vero, rem nisi delectus excepturi, voluptate perferendis id commodi non architecto doloribus ullam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officia, quo reprehenderit ipsum libero qui dolorem necessitatibus repudiandae commodi ea molestias nobis omnis, dolores iusto animi esse fugiat a quos impedit inventore rem dolor! Eum facilis hic vero, rem nisi delectus excepturi, voluptate perferendis id commodi non architecto doloribus ullam?</p>
+</div>
+<div class="container-2" id="">
+    <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, nobis!</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officia, quo reprehenderit ipsum libero qui dolorem necessitatibus repudiandae commodi ea molestias nobis omnis, dolores iusto animi esse fugiat a quos impedit inventore rem dolor! Eum facilis hic vero, rem nisi delectus excepturi, voluptate perferendis id commodi non architecto doloribus ullam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officia, quo reprehenderit ipsum libero qui dolorem necessitatibus repudiandae commodi ea molestias nobis omnis, dolores iusto animi esse fugiat a quos impedit inventore rem dolor! Eum facilis hic vero, rem nisi delectus excepturi, voluptate perferendis id commodi non architecto doloribus ullam?</p>
+    <br>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officia, quo reprehenderit ipsum libero qui dolorem necessitatibus repudiandae commodi ea molestias nobis omnis, dolores iusto animi esse fugiat a quos impedit inventore rem dolor! Eum facilis hic vero, rem nisi delectus excepturi, voluptate perferendis id commodi non architecto doloribus ullam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officia, quo reprehenderit ipsum libero qui dolorem necessitatibus repudiandae commodi ea molestias nobis omnis, dolores iusto animi esse fugiat a quos impedit inventore rem dolor! Eum facilis hic vero, rem nisi delectus excepturi, voluptate perferendis id commodi non architecto doloribus ullam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officia, quo reprehenderit ipsum libero qui dolorem necessitatibus repudiandae commodi ea molestias nobis omnis, dolores iusto animi esse fugiat a quos impedit inventore rem dolor! Eum facilis hic vero, rem nisi delectus excepturi, voluptate perferendis id commodi non architecto doloribus ullam?</p>
+</div>
+
+
+
+
+
+
+<script>
+    let sky = document.getElementById('sky');
+    let moon = document.getElementById('moon');
+    let mountain = document.getElementById('mountain');
+
+    window.addEventListener('scroll', function(){
+        let value = window.scrollY;
+        sky.style.top = value *0.25 + 'px';
+        moon.style.top = value *0.45  + 'px';
+        mountain.style.bottom = -value  + 'px';
+    });
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
