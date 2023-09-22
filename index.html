@@ -71,8 +71,8 @@
           <div class="col-md-6 order-md-first mt-3 mt-md-0">
             <div class="home-txt">
               <p class="text-muted mb-1">Hello I'm</p>
-              <h1 class="text-danger fw-bold fs-1">MERN Stack Developer</h1>
-              <h2 class="fs-4">Dilshad Ahmed</h2>
+              <h1 class="text-danger fw-bold fs-1">Dilshad Ahmed</h1>
+              <h2 class="fs-2 fw-bold">MERN Stack Developer</h2>
               <p class="mt-4 text-muted">
                 Strong knowledge in <b>MERN Stack</b> with vast experience in
                 building Web Application , used <b>ReactJS,Redux</b> for client
@@ -102,27 +102,13 @@
         <div class="row d-flex justify-content-center align-items-center">
           <div class="col-md-6 p-4">
             <div class="about-text">
-              <h3>Dilshad Ahmed</h3>
+              <h3 style="font-weight: bold">Dilshad Ahmed</h3>
               <p class="text-muted">
                 Strong knowledge in <b>MERN Stack</b> with vast experience in
                 building Web Application , used <b>ReactJS,Redux</b> for client
                 side,<b>Node.js/Express </b> for server side and
                 <b>MongoDB</b> for Database.
               </p>
-              <!-- <div class="row text-center">
-                            <div class="col-4 ">
-                                <h4 class="fw-bold fs-2">20</h4>
-                                <p class="text-muted">project completed</p>    
-                            </div>
-                            <div class="col-4 ">
-                                <h4 class="fw-bold fs-2">20</h4>
-                                <p class="text-muted">happy client</p>    
-                            </div>
-                            <div class="col-4 ">
-                                <h4 class="fw-bold fs-2">20</h4>
-                                <p class="text-muted">reviews</p>    
-                            </div>
-                        </div> -->
               <div class="row">
                 <div class="col-lg-12">
                   <div class="row">
@@ -130,9 +116,19 @@
                     <div class="social-links pb-3 fs-3">
                       <a
                         href="https://www.linkedin.com/in/dilshad-ahmed-81b375201/"
-                        ><i class="fab fa-linkedin"></i
-                      ></a>
-                      <a href="https://github.com/dilshad-ahmed"
+                        ><img
+                          src="./images/linkdin.bmp"
+                          alt="linkdIn"
+                          class="linkdin-style"
+                      /></a>
+                      <a
+                        href="./assets/dilshad-resume.pdf"
+                        class="btn btn-danger me-5 btn-scale"
+                        download
+                      >
+                        Download CV
+                      </a>
+                      <!-- <a href="https://github.com/dilshad-ahmed"
                         ><i class="fab fa-github"></i
                       ></a>
                       <a href="https://twitter.com/dilshad__ahmed_"
@@ -143,17 +139,10 @@
                       ></a>
                       <a href="https://www.instagram.com/dilshad_.ahmed/"
                         ><i class="fab fa-instagram"></i
-                      ></a>
+                      ></a> -->
                     </div>
                   </div>
                 </div>
-                <a
-                  href="./assets/dilshad-resume.pdf"
-                  class="btn btn-danger me-5"
-                  download
-                >
-                  Download CV
-                </a>
               </div>
             </div>
           </div>
@@ -248,12 +237,6 @@
               </p>
             </div>
           </div>
-          <!-- <div class="col-sm-6  col-md-4 mt-md-0 mb-4">
-                    <div class="service-item shadow-sm bg-white p-5 p-md-4 text-center">
-                        <h1 class="text-danger fw-bold fs-2 mb-4">Graphics Design</h1>
-                        <p class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum tempore repellendus corrupti modi quo! Perspiciatis!  </p>
-                    </div>
-                </div> -->
         </div>
       </div>
     </section>
@@ -630,7 +613,7 @@
                 href="https://www.linkedin.com/in/dilshad-ahmed-81b375201/"
                 class="btn btn-light text-danger"
               >
-                HIRE ME</a
+                MESSAGE ME ON LINKDIN</a
               >
             </div>
           </div>
@@ -685,8 +668,11 @@
                 <div class="col-md-6 mb-4">
                   <input
                     type="text"
-                    placeholder="your name"
+                    placeholder="Your Name"
                     class="form-control"
+                    id="name"
+                    name="name"
+                    required
                   />
                 </div>
                 <div class="col-md-6 mb-4">
@@ -697,20 +683,23 @@
                 <div class="col-md-12 mb-4">
                   <input
                     type="text"
-                    placeholder="Contact no"
+                    placeholder="Contact No."
                     class="form-control"
+                    id="email"
+                    name="email"
                   />
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-12 mb-4">
                   <textarea
-                    name=""
+                    name="message"
+                    id="message"
                     class="form-control fs-6 shadow-sm"
-                    id=""
                     cols="10"
                     rows="5"
-                    placeholder="enter your messages"
+                    placeholder="Enter your messages"
+                    required
                   ></textarea>
                 </div>
               </div>
@@ -718,10 +707,11 @@
                 <div class="col-md-12 mb-4">
                   <button
                     class="btn btn-danger text-white"
-                    type="submit"
+                    type="button"
+                    id="sendMessage"
                     style="width: 100%"
                   >
-                    submit
+                    SEND MESSAGE
                   </button>
                 </div>
               </div>
@@ -739,11 +729,40 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 text-center">
-            <p class="text-muted">&copy 2022 Develop and Design by Dilshad</p>
+            <p class="text-muted">&copy 2024 Design by Dilshad</p>
           </div>
         </div>
       </div>
     </div>
     <!-- footer stop -->
+    //script to send message on whatsapp
+    <script>
+      document
+        .getElementById("sendMessage")
+        .addEventListener("click", function () {
+          console.log("click");
+          // Get user input
+          var name = document.getElementById("name").value;
+          var email = document.getElementById("email").value;
+          var message = document.getElementById("message").value;
+          console.log(name, email, message);
+          // Construct the WhatsApp message
+          var whatsappMessage =
+            "Name: " + name + "%0AEmail: " + email + "%0AMessage: " + message;
+
+          // Construct the WhatsApp URL
+          var whatsappURL =
+            "https://wa.me/918318639067/?text=" +
+            encodeURIComponent(whatsappMessage);
+
+          // Open WhatsApp with the pre-filled message
+          window.open(whatsappURL);
+
+          // Optionally, you can clear the form fields after sending
+          document.getElementById("name").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("message").value = "";
+        });
+    </script>
   </body>
 </html>
